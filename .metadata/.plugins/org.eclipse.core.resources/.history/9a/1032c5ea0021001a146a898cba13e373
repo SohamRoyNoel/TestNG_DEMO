@@ -1,0 +1,7 @@
+<suit name="SwagLABSApplication">
+<test name="TestingDemo">
+<classes>
+<class name="Test.FacebookLogin" />
+</classes>
+</test>
+</suit>

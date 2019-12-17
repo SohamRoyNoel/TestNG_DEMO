@@ -1,0 +1,8 @@
+package Test;
+
+public class XpathConfiguration {
+
+	public static String useremail = "//*[@class='inputtext _55r1 inputtext _1kbt inputtext _1kbt' and @name='email']";
+	public static String userpassword = "//*[@class='inputtext _55r1 inputtext _1kbt inputtext _1kbt' and @name='pass']"
+	
+}

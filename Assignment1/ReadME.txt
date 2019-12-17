@@ -1,0 +1,2 @@
+Chrome Driver version : 79 (simply put the driver in "CHROMEDRIVER_79" folder
+User name and credentials can be changed from : UserCredentials.properties file

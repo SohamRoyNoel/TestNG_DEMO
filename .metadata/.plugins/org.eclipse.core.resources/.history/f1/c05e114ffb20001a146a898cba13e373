@@ -1,0 +1,32 @@
+package Test;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class FacebookLogin {
+	@Test
+	public void LoginValidation() {
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		String baseUrl = "https://en-gb.facebook.com/login/";
+		driver.get(baseUrl);
+		
+		
+	}
+
+	public static String properties(String key) throws Exception {
+		File fl = new File("./config/UserCredentials.properties");
+		FileInputStream file = new FileInputStream(fl);
+		Properties rpop = new Properties();
+		rpop.load(file);
+		String data = rpop.getProperty(key);
+		return data;
+
+	}
+}

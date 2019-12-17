@@ -1,0 +1,36 @@
+package Test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+
+public class SwagLabs {
+
+	private WebDriver driver;
+
+	@BeforeTest
+	public void beforeTest() {
+		//initialize the Browser
+		System.setProperty("webdriver.chrome.driver", XpathConfiguration.ChromedriverLocation);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+
+	@Test
+	public void SwagLabs() {
+		// Wait until the elements are visible
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+
+		// Fetch the URL
+		driver.get(XpathConfiguration.url);
+	}
+
+	@AfterTest
+	public void afterTest() {
+	}
+
+}

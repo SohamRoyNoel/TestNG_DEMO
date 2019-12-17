@@ -1,0 +1,7 @@
+<suit name="FaceApplicationLogin">
+<test name="testingDemo">
+<classes>
+<class name="Test.FacebookLogin" />
+</classes>
+</test>
+</suit>

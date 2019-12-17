@@ -1,0 +1,13 @@
+package Test;
+
+public class XpathConfiguration {
+
+	public static String userEmail = "//*[@class='form_input' and @id='user-name']";
+	public static String userPassword = "//*[@class='form_input' and @id='password']";
+	public static String loginButton = "//*[@class='_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy' and @name='login']";
+	
+	public static String ChromedriverLocation = "CHROMEDRIVER_79/chromedriver.exe";
+	public static String userCredentials = "UserCredentials.properties";
+	public static String url = "https://www.saucedemo.com/index.html";
+	
+}

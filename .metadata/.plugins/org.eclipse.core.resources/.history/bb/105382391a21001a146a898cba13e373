@@ -1,0 +1,128 @@
+package Test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+
+public class SwagLabs {
+
+	private WebDriver driver;
+
+	@BeforeTest
+	public void beforeTest() {
+		//initialize the Browser
+		System.setProperty("webdriver.chrome.driver", XpathConfiguration.ChromedriverLocation);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+
+	@Test(priority = 1)
+	public void SwagLabsLogin() {
+		// Wait until the elements are visible
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+
+		// Fetch the URL
+		driver.get(XpathConfiguration.url);
+
+		try {
+			// Send the user name
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XpathConfiguration.userName))).sendKeys(properties("Username"));
+			// send the user password
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XpathConfiguration.userPassword))).sendKeys(properties("Password"));
+			// login to the Application
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XpathConfiguration.loginButton))).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test(priority = 2)
+	public void priceOrder() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		Select dropdown = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XpathConfiguration.priceDropdown))));
+		dropdown.selectByIndex(2);
+	}
+
+	@Test(priority = 3)
+	public void addToCart() {
+		int counter = 0;
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		// Highest Price
+		List<WebElement> listOfElements = driver.findElements(By.xpath(XpathConfiguration.priceTags));
+		ListIterator<WebElement> iterator = listOfElements.listIterator();
+
+		// all price list to determine 3rd significant value
+		int listsize = listOfElements.size();
+		List<Float> listAllprizes = new ArrayList<Float>();
+		while (iterator.hasNext()) {
+			if(counter < listsize) {
+				String price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class='inventory_item_price'])["+(counter+1)+"]"))).getText();
+				Float realPrice =Float.parseFloat(price.substring(price.lastIndexOf("$")+1, price.length()));
+				listAllprizes.add(realPrice);
+				if(counter==listsize-1) {
+					break;
+				}
+			}
+			counter++;
+		}
+
+		Float cost = getThirdlargestprice(listAllprizes);
+
+		// determine the elements to be added to the cart
+		int similarpriceTagCount = driver.findElements(By.xpath("//*[text()='"+cost+"']//following::button[1]")).size();
+		if(similarpriceTagCount > 1) {
+			for(int i=1; i<=similarpriceTagCount; i++) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[text()='"+cost+"']//following::button[1])["+i+"]"))).click();
+			}
+		}else {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[text()='"+cost+"']//following::button[1])"))).click();
+		}
+	}
+	
+	@Test(priority = 4)
+	public void checkoutOrder() {
+		// Click on CART
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XpathConfiguration.cartButton))).click();
+		
+	}
+
+	@AfterTest
+	public void afterTest() throws InterruptedException {
+		Thread.sleep(3000);
+		driver.quit();
+	}
+
+	// Method that communicates with external properties file
+	public static String properties(String key) throws Exception {
+		File fl = new File(XpathConfiguration.userCredentials);
+		FileInputStream file = new FileInputStream(fl);
+		Properties rpop = new Properties();
+		rpop.load(file);
+		String data = rpop.getProperty(key);
+		return data;
+	}
+
+	// determine 3rd highest price
+	public Float getThirdlargestprice(List<Float> list){  
+		Collections.sort(list);
+		Float Lvalue = list.get(list.size()-3);
+		return Lvalue;
+	}  
+}

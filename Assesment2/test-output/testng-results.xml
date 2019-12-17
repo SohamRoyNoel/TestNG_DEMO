@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13936" started-at="2019-12-18T04:32:54 IST" finished-at="2019-12-18T04:33:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13936" started-at="2019-12-18T04:32:54 IST" finished-at="2019-12-18T04:33:08 IST">
+      <class name="Test.SwagLabs">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Test.SwagLabs@6d7b4f4c]" name="beforeTest" is-config="true" duration-ms="3622" started-at="2019-12-18T04:32:54 IST" finished-at="2019-12-18T04:32:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginUSER()[pri:1, instance:Test.SwagLabs@6d7b4f4c]" name="loginUSER" duration-ms="1362" started-at="2019-12-18T04:32:57 IST" finished-at="2019-12-18T04:32:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUSER -->
+        <test-method status="PASS" signature="SwagLabsLogin()[pri:2, instance:Test.SwagLabs@6d7b4f4c]" name="SwagLabsLogin" duration-ms="6326" started-at="2019-12-18T04:32:59 IST" finished-at="2019-12-18T04:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwagLabsLogin -->
+        <test-method status="PASS" signature="priceOrder()[pri:3, instance:Test.SwagLabs@6d7b4f4c]" name="priceOrder" duration-ms="119" started-at="2019-12-18T04:33:05 IST" finished-at="2019-12-18T04:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceOrder -->
+        <test-method status="PASS" signature="addToCart()[pri:4, instance:Test.SwagLabs@6d7b4f4c]" name="addToCart" duration-ms="331" started-at="2019-12-18T04:33:05 IST" finished-at="2019-12-18T04:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="checkoutOrder()[pri:5, instance:Test.SwagLabs@6d7b4f4c]" name="checkoutOrder" duration-ms="579" started-at="2019-12-18T04:33:05 IST" finished-at="2019-12-18T04:33:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutOrder -->
+        <test-method status="PASS" signature="checkoutInformation()[pri:6, instance:Test.SwagLabs@6d7b4f4c]" name="checkoutInformation" duration-ms="471" started-at="2019-12-18T04:33:06 IST" finished-at="2019-12-18T04:33:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformation -->
+        <test-method status="PASS" signature="orderConfermation()[pri:7, instance:Test.SwagLabs@6d7b4f4c]" name="orderConfermation" duration-ms="420" started-at="2019-12-18T04:33:07 IST" finished-at="2019-12-18T04:33:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderConfermation -->
+        <test-method status="PASS" signature="placedOrderVerification()[pri:8, instance:Test.SwagLabs@6d7b4f4c]" name="placedOrderVerification" duration-ms="78" started-at="2019-12-18T04:33:07 IST" finished-at="2019-12-18T04:33:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placedOrderVerification -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Test.SwagLabs@6d7b4f4c]" name="afterTest" is-config="true" duration-ms="596" started-at="2019-12-18T04:33:07 IST" finished-at="2019-12-18T04:33:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Test.SwagLabs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,629 @@
+!SESSION 2019-12-17 23:15:08.610 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-12-17 23:17:05.071
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 23:18:36.858
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\soham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-12-17 23:36:15.614
+!MESSAGE The POM for org.testng:testng:jar:6.9.13.7 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-12-17 23:38:14.355
+!MESSAGE 
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:197)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:160)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineOffset(BasicStructuredDocument.java:1497)
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.findLocationForMarker(MarkerLocationService.java:106)
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:48)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:331)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:314)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:83)
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:65)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:551)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$2(ProjectRegistryManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:513)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:365)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:312)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:155)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:90)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-12-17 23:38:14.366
+!MESSAGE 
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:197)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:160)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineOffset(BasicStructuredDocument.java:1497)
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.findLocationForMarker(MarkerLocationService.java:106)
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:48)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:331)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:314)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:83)
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:65)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:551)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$2(ProjectRegistryManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:513)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:365)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:312)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:155)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:90)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-12-17 23:38:14.554
+!MESSAGE An internal error occurred during: "refresh".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.PartSite.getShell(PartSite.java:444)
+	at org.eclipse.ui.actions.WorkspaceAction.getShell(WorkspaceAction.java:222)
+	at org.eclipse.ui.actions.RefreshAction.checkLocationDeleted(RefreshAction.java:122)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:267)
+	at org.eclipse.ui.actions.RefreshAction$2.execute(RefreshAction.java:234)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.views.navigator.WorkspaceActionGroup$1$1.runInWorkspace(WorkspaceActionGroup.java:206)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2019-12-17 23:38:15.529
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2019-12-17 23:38:15.529
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2019-12-17 23:38:15.529
+!MESSAGE Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM E:\PatientMD\Assignment_1\pom.xml: E:\PatientMD\Assignment_1\pom.xml (The system cannot find the file specified) @ 
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM E:\PatientMD\Assignment_1\pom.xml: E:\PatientMD\Assignment_1\pom.xml (The system cannot find the file specified) @ 
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:836)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:263)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-12-17 23:38:17.342
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2019-12-17 23:38:17.348
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-12-17 23:38:17.348
+!MESSAGE The project description file (.project) for 'Assignment_1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-17 23:38:29.642
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-12-17 23:38:33.128 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-17 23:38:38.270
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-12-17 23:38:39.487
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 23:38:44.042
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\soham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:05:50.479
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63372 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1829281108\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 63372 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1829281108\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:09:52.187
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63831 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1925250257\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 63831 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1925250257\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:10:32.290
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63924 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-792811651\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 63924 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-792811651\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:11:09.699
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64019 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--282530877\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64019 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--282530877\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:11:42.382
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64111 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1919649234\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64111 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1919649234\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:13:05.560
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64300 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-261689602\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64300 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-261689602\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:13:48.198
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64410 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--255184701\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64410 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--255184701\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:15:47.082
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64690 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--2033708656\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64690 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--2033708656\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:17:20.873
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64896 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-272445603\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 64896 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-272445603\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:27:27.354
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49781 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1819942906\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 49781 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1819942906\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:30:22.001
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50112 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1576859866\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 50112 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1576859866\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:31:28.934
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assignment1\bin C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar E:\Jars\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50260 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-2107672142\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assignment1\bin:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:E:\Jars\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 50260 -protocol json -d E:\PatientMD\Assignment1\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-2107672142\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:56:18.764
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51944 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--481725182\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 51944 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--481725182\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 00:56:36.121
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51951 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1377405298\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 51951 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1377405298\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:11:14.870
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52964 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1114624243\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 52964 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1114624243\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:13:06.097
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53159 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-279135166\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53159 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-279135166\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:13:48.776
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53253 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1305907387\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53253 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1305907387\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:16:41.491
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53559 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1608917665\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53559 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1608917665\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:17:09.289
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53625 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--376524577\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53625 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--376524577\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:18:31.657
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53776 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1182416670\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53776 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1182416670\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:56:32.002
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57745 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--123204391\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 57745 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--123204391\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:57:28.900
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57854 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1154454762\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 57854 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1154454762\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 01:57:52.917
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57917 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-419230262\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 57917 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-419230262\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:14:05.430
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59550 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--937988714\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 59550 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--937988714\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:15:45.386
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59773 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1548479593\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 59773 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1548479593\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:17:53.140
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60004 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1207222643\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 60004 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1207222643\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:19:57.805
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60226 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--492527753\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 60226 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--492527753\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:20:35.155
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60307 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-795996837\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 60307 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-795996837\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:20:56.967
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60362 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--397463602\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 60362 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--397463602\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:27:11.956
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61198 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1669576055\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 61198 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1669576055\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:27:40.146
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61317 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1740053374\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 61317 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1740053374\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 02:40:48.750
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59926 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-885603937\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 59926 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-885603937\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:23:28.170
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64115 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-743308664\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 64115 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-743308664\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:24:00.482
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64187 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--268919720\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 64187 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--268919720\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:27:56.313
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64557 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--179351491\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 64557 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--179351491\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:28:20.441
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64611 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1169279763\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 64611 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1169279763\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:37:10.464
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65411 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-64378976\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 65411 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-64378976\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:41:56.892
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49449 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1726123155\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 49449 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1726123155\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:53:51.942
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50533 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--806101993\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 50533 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--806101993\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:54:59.024
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50646 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1904777461\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 50646 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1904777461\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:55:26.234
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50704 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-505677218\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 50704 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-505677218\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 03:58:44.443
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50985 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-42114446\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 50985 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-42114446\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:12:32.852
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52256 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-358055342\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 52256 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-358055342\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:19:41.460
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53085 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-913260040\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53085 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-913260040\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:21:10.282
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53234 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-212170923\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53234 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-212170923\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:23:19.857
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53442 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1966605127\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53442 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1966605127\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:24:40.833
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53546 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1232842489\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53546 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1232842489\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:25:57.103
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53641 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--60589211\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53641 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--60589211\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:26:54.343
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53699 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1670919889\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53699 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--1670919889\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:28:14.615
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53781 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--575601067\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53781 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--575601067\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:29:40.009
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53865 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-854079873\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53865 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-854079873\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:30:02.398
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53881 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1175360529\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53881 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-1175360529\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:30:59.848
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53924 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--478782262\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53924 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--478782262\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:31:14.985
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53934 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--449743848\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 53934 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse--449743848\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-12-18 04:32:53.747
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar E:\PatientMD\Assesment2\bin E:\Jars\selenium-server-standalone-3.141.59.jar C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54027 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-672907470\testng-customsuite.xml
+java -ea -classpath C:\Users\soham\eclipse\java-2019-06\eclipse\configuration\org.eclipse.osgi\486\0\.cp\lib\testng-remote.jar:E:\PatientMD\Assesment2\bin:E:\Jars\selenium-server-standalone-3.141.59.jar:C:\Users\soham\.p2\pool\plugins\org.testng_7.0.0.r201908191551.jar:C:\Users\soham\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\soham\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\soham\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 54027 -protocol json -d E:\PatientMD\Assesment2\test-output C:\Users\soham\AppData\Local\Temp\testng-eclipse-672907470\testng-customsuite.xml
